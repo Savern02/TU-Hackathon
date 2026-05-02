@@ -11,13 +11,13 @@ type AppConfigType = {
 }
 
 export const appConfig: AppConfigType = {
-    name: import.meta.env.VITE_APP_NAME ?? "Sample App",
+    name: import.meta.env.VITE_APP_NAME ?? "Reality Check",
     github: {
-        title: "React Shadcn Starter",
+        title: "TU 2026 HACKATHON",
         url: "https://github.com/hayyi2/react-shadcn-starter",
     },
     author: {
-        name: "hayyi",
+        name: "Savern",
         url: "https://github.com/hayyi2/",
     }
 }

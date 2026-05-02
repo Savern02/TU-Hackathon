@@ -1,7 +1,7 @@
 import {
     CircleAlert,
     Files,
-    Gauge,
+    House,
     LucideIcon
 } from 'lucide-react'
 
@@ -16,9 +16,9 @@ type MenuType = MenuItemType[]
 
 export const mainMenu: MenuType = [
     {
-        title: 'Dashboard',
+        title: 'Home',
         url: '/',
-        icon: Gauge
+        icon: House,
     },
     {
         title: 'Pages',

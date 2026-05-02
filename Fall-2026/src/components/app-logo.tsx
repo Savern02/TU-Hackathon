@@ -1,12 +1,11 @@
 import { appConfig } from "@/config/app"
+import logo from "../../public/favicon.svg"
 
 export function AppLogo() {
     return (
         <div className='flex items-center gap-2'>
-            <svg viewBox="0 0 24 24" className='size-6 fill-gray-900 dark:fill-gray-50'>
-                <rect x="2" y="2" width="20" height="20" rx="7" />
-            </svg>
-            <span className="font-semibold text-nowrap">{appConfig.name}</span>
+                <img src={logo} className="h-5 w-5 rounded-sm"/>
+            <span className="font-secondary text-nowrap">{appConfig.name}</span>
         </div>
     )
 }
