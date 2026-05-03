@@ -2,18 +2,26 @@ import { Routes, Route } from 'react-router-dom'
 import { AppLayout } from './components/app-layout'
 import NotMatch from './pages/NotMatch'
 import Dashboard from './pages/Dashboard'
-import Sample from './pages/Sample'
-import ComingSoon from './pages/ComingSoon'
+import Analyzer from './pages/Analyzer'
+import History from './pages/History'
+import Learn from './pages/Learn'
+import Community from './pages/Community'
+import CrisisMode from './pages/CrisisMode'
+import Assistant from './pages/Assistant'
+import Roadmap from './pages/Roadmap'
 
 export default function Router() {
     return (
         <Routes>
             <Route element={<AppLayout />}>
                 <Route path="" element={<Dashboard />} />
-                <Route path="pages">
-                    <Route path="sample" element={<Sample />} />
-                    <Route path="feature" element={<ComingSoon />} />
-                </Route>
+                <Route path="analyze" element={<Analyzer />} />
+                <Route path="history" element={<History />} />
+                <Route path="learn" element={<Learn />} />
+                <Route path="community" element={<Community />} />
+                <Route path="crisis" element={<CrisisMode />} />
+                <Route path="assistant" element={<Assistant />} />
+                <Route path="roadmap" element={<Roadmap />} />
                 <Route path="*" element={<NotMatch />} />
             </Route>
         </Routes>
